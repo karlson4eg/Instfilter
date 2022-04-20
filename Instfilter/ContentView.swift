@@ -8,23 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var blurAmount = 0.0
+    @State private var showingConfirmation = false
+    @State private var backgroundColor = Color.white
     
     
     var body: some View {
-        VStack{
-            Text("poopypants")
-                .blur(radius: blurAmount)
-            
-            Slider(value: $blurAmount, in: 0...20)
-                .onChange(of: blurAmount) { newValue in
-                    print("New value: \(newValue)")
-                }
-            
-            Button("Random blur"){
-                blurAmount = Double.random(in: 0...20)
+        Text("Hello, world!")
+            .frame(width:300, height: 300)
+            .background(backgroundColor)
+            .onTapGesture {
+                showingConfirmation = true
             }
-        }
+            .confirmationDialog("Change background", isPresented: $showingConfirmation) {
+                Button("Red") { backgroundColor = .red }
+                Button("Green") { backgroundColor = .green }
+                Button("Pink") { backgroundColor = .pink }
+                Button("Go away", role: .cancel) { }
+            } message: {
+                Text("Select a new color")
+            }
     }
 }
 
