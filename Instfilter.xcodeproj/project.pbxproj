@@ -11,6 +11,7 @@
 		030FC0FC2810288D005D4296 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030FC0FB2810288D005D4296 /* ContentView.swift */; };
 		030FC0FE2810288F005D4296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 030FC0FD2810288F005D4296 /* Assets.xcassets */; };
 		030FC1012810288F005D4296 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 030FC1002810288F005D4296 /* Preview Assets.xcassets */; };
+		03D7A17028131AF800D66E36 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D7A16F28131AF800D66E36 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		030FC0FB2810288D005D4296 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		030FC0FD2810288F005D4296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		030FC1002810288F005D4296 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		03D7A16F28131AF800D66E36 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				030FC0F92810288D005D4296 /* InstfilterApp.swift */,
 				030FC0FB2810288D005D4296 /* ContentView.swift */,
+				03D7A16F28131AF800D66E36 /* ImagePicker.swift */,
 				030FC0FD2810288F005D4296 /* Assets.xcassets */,
 				030FC0FF2810288F005D4296 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03D7A17028131AF800D66E36 /* ImagePicker.swift in Sources */,
 				030FC0FC2810288D005D4296 /* ContentView.swift in Sources */,
 				030FC0FA2810288D005D4296 /* InstfilterApp.swift in Sources */,
 			);
